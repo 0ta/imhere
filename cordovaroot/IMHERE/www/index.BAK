@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<!--
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" href="css/imhere.all.css" />
+    <link rel="stylesheet" href="js/jq/jquery.mobile-1.4.4.min.css" />
+    <link rel="stylesheet" href="js/alert/alertify.core.css" />
+    <link rel="stylesheet" href="js/alert/alertify.default.css" />
+	<!--<script src="http://10.36.17.166:8080/target/target-script-min.js#metro"></script>-->
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/jq/jquery.mobile-1.4.4.min.js"></script>
+    <script src="js/oauth/sha1.js"></script>
+    <script src="js/oauth/oauth.js"></script>
+    <script src="js/imhere.all.js"></script>
+	<script src="js/locale/moment.js"></script>
+	<script src="js/alert/alertify.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAPwnnaQJkJzis24GQ3ROcHkAK-ZFJN5h0&sensor=TRUE"></script>
+    <title>I'm here</title>
+</head>
+
+<body>
+
+    <div data-role="page" data-theme="z" id="splash_page" style=" width: 100%; height: 100%; padding: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+        <div role="main" class="ui-content imhere-ui-content-splash" style=" width: 100%; height: 100%; padding: 0; ">
+			<div class="imhere-splash-page-top-block">
+				<span style="font-family:'edwardian'; color:transparent;">@ota</span>
+			</div>
+	        <div class="imhere-imhere-button-outer-block">
+		        <img id="slpash-main-imhere" class="imhere-imhere-center" src="./img/imhere.png"></img>
+		    </div>
+        </div>
+	</div>
+
+    <div data-role="page" data-theme="z" id="logon_page" style=" width: 100%; height: 100%; padding: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+        <div data-role="header" data-theme="z" id="logon_header" data-position="fixed">
+	        <div class="imhere-logon-outer-block">
+		        <img class="imhere-logon-center" src="./img/header_train.png"></img>
+		    </div>
+        </div>
+        <div role="main" class="ui-content imhere-ui-content" style=" width: 100%; height: 100%; padding: 0; ">
+			<div class="imhere-logon-page-top-block"></div>
+			<div class="imhere-logon-button-outer-block">
+				<a href="#" id="logon-main-logon-a" class="imhere-ghost-button imhere-ghost-button-twitter">
+					<img class="imhere-twitter-icon" src="./img/Twitter_logo_blue.png"></img>
+					Logon with Twitter
+				</a>
+			</div>
+        </div>
+	</div>
+
+    <div data-role="page" data-theme="z" id="main_page" style=" width: 100%; height: 100%; padding: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+        <div data-role="header" data-theme="z" id="main_header" data-position="fixed">
+	        <div class="imhere-logon-outer-block">
+		        <img class="imhere-logon-center" src="./img/header_train.png"></img>
+		    </div>
+	        <a href="#" id="main-header-logoff" data-theme="a" data-icon="power" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>        
+        <div role="main" class="ui-content imhere-ui-content" style=" width: 100%; height: 100%; padding: 0; ">
+			<div class="imhere-main-page-top-block">
+<!--
+				<input type='text' value="" id="imhere_lat_text" data-theme="a" placeholder="Latitude(for test)"></input>
+	            <input type='text' value="" id="imhere_long_text" data-theme="a" placeholder="Longtude(for test)"></input>
+-->
+			</div>
+	        <div class="imhere-imhere-button-outer-block">
+				<a id="main-main-imhere-a" href="#">
+		        	<img id="main-main-imhere" class="imhere-imhere-center" src="./img/imhere.png"></img>
+				<a>
+		    </div>
+			<div class="imhere-main-page-clickhere-block">
+				Click here!
+			</div>
+			<div id="main-main-tweet-text" class="imhere-main-page-tweet-text-block"></div>
+			<div class="imhere-main-page-wherefriends-block">
+				<a href="#" id="main-main-whereyourfriends-button" class="imhere-ghost-button">Where are your friends?</a>
+			</div>
+        </div>
+	</div>
+
+	<div data-role="page" id="googlemap_page" style=" width: 100%; height: 100%; padding: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+        <div data-role="header" data-theme="z" id="googlemap_header" data-position="fixed">
+	        <a href="#" id="googlemap-header-back" data-theme="a" data-icon="home" data-iconpos="notext" class="ui-btn-left"></a>
+	        <div class="imhere-logon-outer-block">
+		        <img class="imhere-logon-center" src="./img/header_train.png"></img>
+		    </div>
+	        <a href="#" id="googlemap-header-reflesh" data-theme="a" data-icon="refresh" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>     
+		<div role="main" class="ui-content" style=" width: 100%; height: 100%; padding: 0; ">
+			<div id="map_canvas" class="ui-content" style=" width: 100%; height: 100%; padding: 0; "></div>
+		</div>
+	</div>
+
+	<script lauguage="JavaScript">
+		// Global Context
+		var imhereglobalcontext;
+		// Event attach
+	    $(document).on('pagebeforecreate', '#splash_page', function(e, d) {
+			$('#slpash-main-imhere').addClass('animated bounceOut');
+			$('#slpash-main-imhere').bind('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){initialImherePostAnimationEnd()});
+			// 背景IMGのPreload
+			$('<img src="./img/sora.jpg">');
+			var initialImherePostAnimationEnd = (function() {
+				imhereglobalcontext = imhere.initImhere().then(
+					function(globalcontext) {
+						imhereglobalcontext = globalcontext;
+						if (imhereglobalcontext.twitterAPI.isAvailable() == true) {
+							$.mobile.changePage("#main_page", {transition: 'none'});
+						} else {
+							$.mobile.changePage("#logon_page", {transition: 'none'});
+						}
+					}
+				);
+			});
+	    });
+	    $(document).on('pagebeforeshow', '#logon_page', function(e, d) {
+			$.mobile.loading("hide");
+			$('#logon-main-logon-a').removeClass('ui-disabled');
+		});
+	    $(document).on('pagebeforeshow', '#main_page', function(e, d) {
+			$('#main-main-tweet-text').text("");
+		});
+	    $(document).on('pagebeforeshow', '#googlemap_page', function(e, d) {
+	        imhere.GoogleMapPage.reloadModule();
+	    });
+	</script>
+</body>
+
+</html>

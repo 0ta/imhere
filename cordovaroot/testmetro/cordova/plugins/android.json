@@ -1,0 +1,37 @@
+{
+    "prepare_queue": {
+        "installed": [
+            {
+                "plugin": "org.apache.cordova.geolocation",
+                "vars": {},
+                "topLevel": true
+            },
+            {
+                "plugin": "org.apache.cordova.geolocation",
+                "vars": {},
+                "topLevel": true
+            },
+            {
+                "plugin": "org.apache.cordova.geolocation",
+                "vars": {},
+                "topLevel": true
+            },
+            {
+                "plugin": "org.apache.cordova.geolocation",
+                "vars": {},
+                "topLevel": true
+            },
+            {
+                "plugin": "org.apache.cordova.geolocation",
+                "vars": {},
+                "topLevel": true
+            }
+        ],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {},
+    "dependent_plugins": {}
+}

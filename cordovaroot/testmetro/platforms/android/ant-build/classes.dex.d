@@ -1,0 +1,23 @@
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes.dex : \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\BuildConfig.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\imheretest.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\R$attr.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\R$drawable.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\R$string.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\R$xml.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\com\ota\R.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$1.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$2.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$3.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4$1.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$4.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$1.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$2.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$3.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5$4.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$5.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser$InAppBrowserClient.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowser.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppBrowserDialog.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\classes\org\apache\cordova\inappbrowser\InAppChromeClient.class \
+C:\cordovaroot\testmetro\platforms\android\ant-build\dexedLibs\classes-1b233b387b67a9ea84ca6fb9b8204eaf.jar \

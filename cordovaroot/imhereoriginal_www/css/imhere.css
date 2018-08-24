@@ -1,0 +1,117 @@
+@font-face {
+   font-family: edwardian;
+   src: url('./../font/edwardian-script-itc.ttf') format("truetype");
+}
+
+.ui-header.ui-bar-z {
+	height:49px;
+	z-index:1;
+}
+
+.imhere-logon-outer-block {
+  text-align: center;
+}
+
+.imhere-logon-outer-block * {
+  margin: 0 auto;
+}
+   .imhere-logon-outer-block img {
+       vertical-align: middle;
+       position:relative;
+       top:3px;
+       height:43px;
+   }
+
+.imhere-logon-page-top-block {
+  height: 45%;
+}
+
+.imhere-logon-button-outer-block {
+  text-align: center;
+}
+
+
+.imhere-splash-page-top-block {
+	height: 25%;
+}
+
+.imhere-ui-content-splash {
+	background-color:#87CEFA;
+}
+
+.imhere-ui-content {
+	background-image:url("./../img/sora.jpg");
+	 -webkit-background-size:100%;
+	background-size:100%;
+}
+
+.imhere-ghost-button {
+	display: inline-block;
+	padding: 8px 19px;
+	border: solid 1px #fff;
+	border-radius: 3px;
+	background: rgba(0,0,0,0.0);
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: edwardian, Arial, sans-serif;
+}
+
+.imhere-ghost-button:active{
+	color: #333;
+	background: #fff;
+}
+
+.imhere-ghost-button-twitter {
+	padding: 10px 35px 10px 10px;
+}
+
+.imhere-twitter-icon {
+	padding: 0px 20px 0px 0px;
+    vertical-align: middle;
+	width: 30px;
+}
+
+.imhere-main-page-top-block {
+	height: 20%;
+}
+
+.imhere-imhere-button-outer-block {
+	text-align: center;
+}
+
+.imhere-imhere-center {
+	max-height: 30%;
+}
+
+.imhere-main-page-clickhere-block {
+	height: 5%;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 0px 0px 0px;
+	font-size: 18px;
+	font-family: SANS-SERIF, Arial, Helvetica;
+}
+
+.imhere-main-page-tweet-text-block {
+	height: 28%;
+}
+
+#main-main-tweet-text {
+	-webkit-animation-duration: 15s;
+	animation-duration: 15s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+.imhere-main-page-wherefriends-block {
+	text-align: right;
+	padding: 0px 15px 0px 0px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+}
